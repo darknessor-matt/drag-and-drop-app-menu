@@ -1,0 +1,9 @@
+<h3><code>ng2-dragula</code></h3>
+
+<!-- these are some basics to get you started -- modify as you see fit. -->
+
+<div class="row">
+  <div class="container" dragula="items" [(dragulaModel)]="items" id="holder">
+    <div class="vamp" *ngFor="let item of items">{{ item.name }}</div>
+  </div>
+</div>
