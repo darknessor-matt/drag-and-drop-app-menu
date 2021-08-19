@@ -10,10 +10,10 @@ import { MenuItem } from 'src/app/model/menu-item';
 export class AppItemHolderComponent implements OnInit {
 
   items: Array<MenuItem> = [
-    {name: "Bad"},
-    {name: "Petrovitch"},
-    {name: "Optimistic"},
-    {name: "Everglades"}
+    {name: "Bad", color: "#000000"},
+    {name: "Petrovitch", color: "#FFFFFF"},
+    {name: "Optimistic", color: "#FF00FF"},
+    {name: "Everglades", color: "#FFFF00"}
   ] 
 
 

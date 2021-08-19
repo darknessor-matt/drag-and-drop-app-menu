@@ -19,7 +19,7 @@ export class ParentFieldComponent implements OnInit {
         return source.id === 'holder'
       },
       copyItem: (menu_item: MenuItem) => {
-        return new MenuItem(menu_item.name)
+        return new MenuItem(menu_item.name, menu_item.color)
       },
       accepts: (el, target, source, sibling) => {
         return target?.id === 'selected'

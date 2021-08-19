@@ -10,7 +10,7 @@ import { MenuItem } from 'src/app/model/menu-item';
 })
 export class AppItemSelectedComponent implements OnInit {
 
-  mockup_item: MenuItem = { name: "mockup" }
+  mockup_item: MenuItem = { name: "mockup", color: "#000000"}
 
   items: Array<any> = [
     {},
@@ -26,7 +26,7 @@ export class AppItemSelectedComponent implements OnInit {
 
       // this.items[args.targetIndex-1] = new MenuItem(args.item);
       this.items[args.targetIndex-1]={};
-      this.items[args.targetIndex-1] = new MenuItem(args.item.name);
+      this.items[args.targetIndex-1] = new MenuItem(args.item.name, args.item.color);
 
       this.items.splice(args.targetIndex, 1)
       
@@ -49,7 +49,7 @@ export class AppItemSelectedComponent implements OnInit {
     //     this.items.splice(index, 1)
     // })
 
-    let mockup: MenuItem = { name: "mockup" }
+    let mockup: MenuItem = { name: "mockup" , color: "#FFFFFF"}
 
     this.items[index] = mockup;
 

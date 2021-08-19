@@ -1,9 +1,11 @@
-<h3><code>ng2-dragula</code></h3>
+<h3><code>Components</code></h3>
 
 <!-- these are some basics to get you started -- modify as you see fit. -->
 
 <div class="row">
   <div class="container" dragula="items" [(dragulaModel)]="items" id="holder">
-    <div class="vamp" *ngFor="let item of items">{{ item.name }}</div>
+    <div class="vamp my-1" *ngFor="let item of items" style="background-color: {{item.color}}80;">
+        {{ item.name }} <input [(colorPicker)]="item.color" style="width: 35px; height: 35px;" [style.background]="item.color"/>
+    </div>
   </div>
 </div>

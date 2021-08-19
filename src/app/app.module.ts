@@ -9,6 +9,8 @@ import { DragulaModule } from 'ng2-dragula';
 import { AppItemHolderComponent } from './components/app-item-holder/app-item-holder.component';
 import { AppItemSelectedComponent } from './components/app-item-selected/app-item-selected.component';
 
+import { ColorPickerModule } from 'ngx-color-picker';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -19,7 +21,8 @@ import { AppItemSelectedComponent } from './components/app-item-selected/app-ite
   imports: [
     BrowserModule,
     AppRoutingModule,
-    DragulaModule.forRoot()
+    DragulaModule.forRoot(),
+    ColorPickerModule
   ],
   providers: [],
   bootstrap: [AppComponent]
