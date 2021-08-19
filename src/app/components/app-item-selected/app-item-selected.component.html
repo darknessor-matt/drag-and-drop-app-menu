@@ -33,7 +33,7 @@
 
                 <div class="row">
                     <div class="container" dragula="items" [(dragulaModel)]="items" id="selected">
-                        <div class="rounded py-1" *ngFor="let item of items; index as i" style="background-color: {{item.color}}80;">
+                        <div class="rounded py-1" *ngFor="let item of items; index as i" [style.background-color]="item.color+'80'">
                             <a href=""></a>
                             <button (click)="delete(item, i)" type="button" class="btn btn-outline-secondary">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
